@@ -9,3 +9,4 @@
 data = b'Hello World'
 print(data[0:5])  # b'Hello'
 
+

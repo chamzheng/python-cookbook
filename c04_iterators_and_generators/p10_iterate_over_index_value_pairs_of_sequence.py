@@ -63,6 +63,7 @@ for line in f:
 # 但是如果使用 enumerate() 函数来代替就显得更加优雅了：
 for lineno, line in enumerate(f):
     # Process line
+    pass
 
 # enumerate() 函数返回的是一个 enumerate 对象实例， 它是一个迭代器，返回连续的包含一个计数和一个值的元组， 元组中的值通过在传入序列上调用 next() 返回。
 # 还有一点可能并不很重要，但是也值得注意， 有时候当你在一个已经解压后的元组序列上使用 enumerate()　函数时很容易调入陷阱。 你得像下面正确的方式这样写：
@@ -74,5 +75,5 @@ for n, (x, y) in enumerate(data):
     pass
 
 # Error!
-for n, x, y in enumerate(data):
-    pass
+# for n, x, y in enumerate(data):
+#   pass
